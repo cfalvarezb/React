@@ -3,6 +3,8 @@ import './App.css';
 import React, { Component } from 'react';
 import ConditionalSection from './sections/conditional';
 import Tutoriales29To32 from './sections/tutoriales29to32';
+import Turotiales38To40 from './sections/tutoriales38to40';
+import Tutoriales41to55 from './sections/tutoriales41to55';
 
 function Hello(props){
     return <h2>{props.title}</h2>
@@ -130,6 +132,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Tutoriales1To28 />
         <Tutoriales29To32 />
+        <Turotiales38To40 />
+        <Tutoriales41to55 />
       </header>
     </div>
   );
