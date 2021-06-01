@@ -5,6 +5,7 @@ import ConditionalSection from './sections/conditional';
 import Tutoriales29To32 from './sections/tutoriales29to32';
 import Turotiales38To40 from './sections/tutoriales38to40';
 import Tutoriales41to55 from './sections/tutoriales41to55';
+import Tutoriales56to60 from './sections/tutoriales56to60';
 
 function Hello(props){
     return <h2>{props.title}</h2>
@@ -91,7 +92,7 @@ class Tutoriales1To28 extends Component {
   render(){
     return(
       <div>
-      <p>
+        <p>
           Bienvenido a este curso
         </p>
         <a
@@ -134,6 +135,7 @@ function App() {
         <Tutoriales29To32 />
         <Turotiales38To40 />
         <Tutoriales41to55 />
+        <Tutoriales56to60 />
       </header>
     </div>
   );
