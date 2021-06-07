@@ -4,9 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import CounterContainer from './containers/Counter';
+import { counterApp } from './reducers';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const store = createStore(counterApp);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* Ejemplo Redux */}
+    <Provider store={store}>
+      <CounterContainer />
+    </Provider>
+    {/* Ejemplo Redux */}
   </React.StrictMode>,
   document.getElementById('root')
 );
